@@ -112,7 +112,7 @@ public class Funcionario implements Serializable {
     }
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "profile", nullable = false)
+    @Column(name = "perfil", nullable = false)
     public ProfileType getProfile() {
         return profile;
     }
