@@ -89,8 +89,8 @@ public class LancamentoControllerTest extends BaseTest {
                 .andExpect(status().isOk());
     }
 
-//    @Test
-//    @WithMockUser
+    @Test
+    @WithMockUser
     public void testRemoverLancamentoAcessoNegado() throws Exception {
         BDDMockito.given(this.lancamentoService.buscarPorId(Mockito.anyLong())).willReturn(Optional.of(new Lancamento()));
 
